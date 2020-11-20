@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <change/>
+    <Jia></Jia>
+    <hello-world msg="Welcome to Your Vue.js App"/>
+    <Icon class="icon"></Icon>
+    <Button></Button>
+    <built-in></built-in>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import Icon from "@/components/Icon";
+import Button from "@/components/Button";
+import Jia from "@/components/Jia";
+import Change from "@/components/Change";
+import BuiltIn from "@/components/BuiltIn";
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    BuiltIn,
+    HelloWorld,
+    Icon,
+    Button,
+    Jia,
+    Change
   }
 }
 </script>
@@ -24,5 +37,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.icon{
+  padding-top: 10px;
 }
 </style>
